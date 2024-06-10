@@ -10,5 +10,8 @@
 <a href="texte-brut">Texte Brut</a>
 <a href="text-html">Texte HTML</a>
 <a href="page-jsp">Page Jsp</a>
+<a href="bootstrapA">Bootstrap A</a>
+<a href="bootstrapB">Bootstrap B</a>
+
 </body>
 </html>
