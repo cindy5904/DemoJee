@@ -7,6 +7,8 @@
 <body>
 <h1><%= "Hello World!" %></h1>
 <br/>
-<a href="hello-servlet">Hello Servlet</a>
+<a href="texte-brut">Texte Brut</a>
+<a href="text-html">Texte HTML</a>
+<a href="page-jsp">Page Jsp</a>
 </body>
 </html>

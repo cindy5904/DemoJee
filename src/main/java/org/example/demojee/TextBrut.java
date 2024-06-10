@@ -4,22 +4,19 @@ import java.io.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
-public class HelloServlet extends HttpServlet {
+@WebServlet(name = "TextBrut", value = "/texte-brut")
+public class TextBrut extends HttpServlet {
     private String message;
 
     public void init() {
-        message = "Hello World!";
+        message = "Je suis un texte brut";
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("text/html");
+        response.setContentType("text/plain");
 
-        // Hello
         PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>" + message + " Je suis sur la page HelloServlet</h1>");
-        out.println("</body></html>");
+        out.println(message);
 
     }
 
