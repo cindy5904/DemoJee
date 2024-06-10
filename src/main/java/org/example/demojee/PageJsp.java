@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 @WebServlet(name = "pageJsp", value = "/page-jsp")
-public class pageJsp extends HttpServlet {
+public class PageJsp extends HttpServlet {
     private String message;
 
     @Override
