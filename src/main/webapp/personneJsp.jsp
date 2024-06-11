@@ -1,4 +1,5 @@
-<%@ page import="org.example.demojee.ServletListePersonne" %><%--
+<%@ page import="org.example.demojee.ServletListePersonne" %>
+<%@ page import="org.example.demojee.Personne" %><%--
   Created by IntelliJ IDEA.
   User: telci
   Date: 11/06/2024
@@ -7,7 +8,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<jsp:useBean id="personnes" type="java.util.ArrayList<org.example.demojee.ServletListePersonne>" scope="request" />
+<jsp:useBean id="personnes" type="java.util.ArrayList<org.example.demojee.Personne>" scope="request" />
 <html>
 <head>
     <title>Title</title>
@@ -18,7 +19,6 @@
     <table class="table">
         <thead>
         <tr>
-            <th scope="col">#</th>
             <th scope="col">Nom</th>
             <th scope="col">Prénom</th>
             <th scope="col">Age</th>
@@ -26,7 +26,7 @@
         </thead>
         <tbody>
         <%
-            for (ServletListePersonne p : personnes) { %>
+            for (Personne p : personnes) { %>
         <tr>
 
             <td><p><%= p.getNom()%></p></td>
