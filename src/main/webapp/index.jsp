@@ -12,6 +12,7 @@
 <a href="page-jsp">Page Jsp</a>
 <a href="bootstrapA">Bootstrap A</a>
 <a href="bootstrapB">Bootstrap B</a>
+<a href="exercice3">Exercice 3</a>
 
 </body>
 </html>
